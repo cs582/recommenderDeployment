@@ -3,11 +3,13 @@ kind: PersistentVolumeClaim
 metadata:
   name: pvc-cs582
 spec:
-  storageClassName: standard
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 1Gi
+      storage: 256Mi
+  storageClassName: standard
   volumeMode: Filesystem
-  volumeName: project2-pv-cs582
+  selector:
+    matchLabels:
+      type: local
