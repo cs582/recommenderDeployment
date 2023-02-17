@@ -18,11 +18,3 @@ spec:
       containers:
         - name: ml-model
           image: yuseicarlos/ml-model:v1.0.3
-          command: [ "python3", "train.py" ]
-            volumeMounts:
-              - name: data
-                mountPath: /data
-      volumes:
-        - name: data
-          persistentVolumeClaim:
-            claimName: pvc-cs582
