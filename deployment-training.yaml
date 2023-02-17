@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
         - name: ml-model
-          image: yuseicarlos/ml-model:v1.0
+          image: yuseicarlos/ml-model:v1.0.1
