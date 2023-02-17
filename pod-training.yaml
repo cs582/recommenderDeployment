@@ -7,3 +7,5 @@ spec:
   containers:
     - name: ml-model
       image: yuseicarlos/ml-model:v1.0
+      ports:
+        - containerPort: 5000
