@@ -4,13 +4,9 @@ metadata:
   name: pvc-cs582
 spec:
   accessModes:
-    - ReadWriteOncePod
+    - ReadWriteMany
   resources:
     requests:
-      storage: 128Mi
+      storage: 1Gi
   storageClassName: standard
   volumeName: project2-pv-cs582
-  volumeMode: Filesystem
-  selector:
-    matchLabels:
-      type: local
