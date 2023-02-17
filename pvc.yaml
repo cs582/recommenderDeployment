@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: pvc-cs582
 spec:
-  accessModes:
+  accessMode:
     - ReadWriteMany
   resources:
     requests:
