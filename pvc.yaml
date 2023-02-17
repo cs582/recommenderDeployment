@@ -4,7 +4,7 @@ metadata:
   name: pvc-cs582
 spec:
   accessModes:
-    - ReadOnlyMany
+    - ReadWriteMany
   resources:
     requests:
       storage: 1Gi
