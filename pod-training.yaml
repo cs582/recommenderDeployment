@@ -6,4 +6,4 @@ spec:
   restartPolicy: OnFailure
   containers:
     - name: ml-model
-      image: yuseicarlos/ml-model:v1.0.3
+      image: yuseicarlos/ml-model:v1.0.4
