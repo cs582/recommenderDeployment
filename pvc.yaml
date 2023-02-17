@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-recommender
+  name: pvc-cs582
 spec:
   storageClassName: standard
   accessModes:
