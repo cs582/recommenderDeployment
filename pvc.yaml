@@ -9,5 +9,4 @@ spec:
     requests:
       storage: 256Mi
   storageClassName: standard
-  volumeMode: Filesystem
   volumeName: project2-pv-cs582
