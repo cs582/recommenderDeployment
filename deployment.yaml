@@ -22,7 +22,7 @@ spec:
             - containerPort: 5000
           volumeMounts:
             - name: project2-pv-cs582
-              mountPath: /data
+              mountPath: /
       volumes:
         - name: project2-pv-cs582
           persistentVolumeClaim:
