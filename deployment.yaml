@@ -20,10 +20,3 @@ spec:
           image: yuseicarlos/playlist-recommender:v1.0
           ports:
             - containerPort: 5000
-          volumeMounts:
-            - name: project2-pv-cs582
-              mountPath: /data
-      volumes:
-        - name: project2-pv-cs582
-          persistentVolumeClaim:
-            claimName: pvc-recommender
