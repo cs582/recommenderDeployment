@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ml-model-pod-2
+spec:
+  restartPolicy: OnFailure
+  containers:
+    - name: ml-model
+      image: yuseicarlos/ml-model:v1.0.5
+      command: [ "python3", "train.py" ]
+      volumeMounts:
+        - name: data
+          mountPath: /data
+  volumes:
+    - name: data
+      persistentVolumeClaim:
+        claimName: pvc-cs582
