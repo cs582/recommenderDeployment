@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: playlist-recommender
-          image: yuseicarlos/playlist-recommender:v1.0.3
+          image: yuseicarlos/playlist-recommender:v1.0.4
           ports:
             - containerPort: 5000
