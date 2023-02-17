@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: playlist-recommender-deployment
+  labels:
+    app: playlist-recommender
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: playlist-recommender
+  template:
+    metadata:
+      labels:
+        app: playlist-recommender
+    spec:
+      containers:
+        - name: playlist-recommender
+          image: yuseicarlos/playlist-recommender:v1.0
+          ports:
+            - containerPort: 5000
+          volumeMounts:
+            - name: project2-pv-cs582
+              mountPath: /
+      volumes:
+        - name: project2-pv-cs582
+          persistentVolumeClaim:
+            claimName: pvc-recommender
