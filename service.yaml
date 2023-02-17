@@ -9,4 +9,3 @@ spec:
     - protocol: TCP
       port: 30501
       targetPort: 5000
-  type: ClusterIP
