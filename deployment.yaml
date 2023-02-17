@@ -15,6 +15,7 @@ spec:
       labels:
         app: playlist-recommender
     spec:
+      restartPolicy: Always
       containers:
         - name: playlist-recommender
           image: yuseicarlos/playlist-recommender:v1.0
