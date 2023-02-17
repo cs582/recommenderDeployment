@@ -10,6 +10,7 @@ spec:
       storage: 128Mi
   storageClassName: standard
   volumeName: project2-pv-cs582
+  volumeMode: Filesystem
   selector:
     matchLabels:
       type: local
