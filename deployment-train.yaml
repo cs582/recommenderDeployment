@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-  name: playlist-recommender-deployment
+  name: ml-model-deployment
   labels:
-    app: playlist-recommender
+    app: ml-model
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: playlist-recommender
+      app: ml-model
   template:
     metadata:
       labels:
-        app: playlist-recommender
+        app: ml-model
     spec:
       containers:
-        - name: playlist-recommender
-          image: yuseicarlos/playlist-recommender:v1.0
+        - name: ml-model
+          image: yuseicarlos/ml-model:v1.0
           ports:
             - containerPort: 5000
           volumeMounts:
