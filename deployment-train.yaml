@@ -20,7 +20,7 @@ spec:
           image: yuseicarlos/ml-model:v1.0
           volumeMounts:
             - name: project2-pv-cs582
-              mountPath: /
+              mountPath: /data
       volumes:
         - name: project2-pv-cs582
           persistentVolumeClaim:
