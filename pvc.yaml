@@ -9,7 +9,3 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  volumeMode: Filesystem
-    selector:
-      matchLabels:
-        type: local
