@@ -10,6 +10,4 @@ spec:
       storage: 256Mi
   storageClassName: standard
   volumeMode: Filesystem
-  selector:
-    matchLabels:
-      type: local
+  volumeName: project2-pv-cs582
