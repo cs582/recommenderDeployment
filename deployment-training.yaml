@@ -6,7 +6,6 @@ metadata:
   labels:
     app: ml-model
 spec:
-  restartPolicy: OnFailure
   replicas: 2
   selector:
     matchLabels:
