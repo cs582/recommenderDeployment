@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  namespace: cs582
+  name: project2-pv-cs582
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 1Gi
+  storageClassName: standard
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Recycle
+  hostPath:
+    path: /home/cs582/project2-shared-folder
