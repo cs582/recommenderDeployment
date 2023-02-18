@@ -21,7 +21,7 @@ spec:
           image: yuseicarlos/ml-model:v1.0.11
           volumeMounts:
             - name: data
-              mountPath: /datas
+              mountPath: /data
       volumes:
         - name: data
           persistentVolumeClaim:
