@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ml-model-pod
+  name: ml-model-pod1
 spec:
   restartPolicy: OnFailure
   containers:
