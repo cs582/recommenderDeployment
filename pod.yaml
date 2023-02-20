@@ -6,7 +6,7 @@ spec:
   restartPolicy: OnFailure
   containers:
     - name: ml-model-deployment
-      image: yuseicarlos/ml-model:v1.2.7
+      image: yuseicarlos/ml-model:v1.2.8
       command: [ "python3", "train.py" ]
       volumeMounts:
         - name: data
