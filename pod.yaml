@@ -11,6 +11,9 @@ spec:
       volumeMounts:
         - name: data
           mountPath: /data
+      env:
+        - name: DATASET_CSV
+          value: "https://github.com/cs582/recommenderDatasets/blob/main/playlist-sample-ds1.csv"
   volumes:
     - name: data
       persistentVolumeClaim:
