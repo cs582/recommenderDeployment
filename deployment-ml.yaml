@@ -18,6 +18,9 @@ spec:
       containers:
         - name: ml-model
           image: yuseicarlos/ml-model:v1.2.3
+          env:
+            - name: DATASET_FILE
+              value: "~/home/datasets/playlist-sample-ds1.csv"
           volumeMounts:
             - name: data
               mountPath: /data
