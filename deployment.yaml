@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: playlist-recommender
-          image: yuseicarlos/playlist-recommender:v1.2.2
+          image: yuseicarlos/playlist-recommender:v1.2.3
           volumeMounts:
             - name: data
               mountPath: /data

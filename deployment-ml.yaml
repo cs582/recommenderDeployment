@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: ml-model
-          image: yuseicarlos/ml-model:v1.2.1
+          image: yuseicarlos/ml-model:v1.2.3
           volumeMounts:
             - name: data
               mountPath: /data
