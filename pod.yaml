@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ml-model-pod1
+  name: ml-model-pod
 spec:
   restartPolicy: OnFailure
   containers:
     - name: ml-model-deployment
-      image: yuseicarlos/ml-model:v1.2.3
+      image: yuseicarlos/ml-model:v1.2.4
       command: [ "python3", "train.py" ]
       volumeMounts:
         - name: data
