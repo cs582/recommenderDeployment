@@ -20,7 +20,7 @@ spec:
           image: yuseicarlos/ml-model:v1.2.10
           env:
             - name: DATASET_CSV
-              value: https://github.com/cs582/recommenderDatasets/blob/main/playlist-sample-ds1.csv
+              value: https://github.com/cs582/recommenderDatasets/blob/main/playlist-sample-ds2.csv
           volumeMounts:
             - name: data
               mountPath: /data

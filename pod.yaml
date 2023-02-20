@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ml-model-pod
+  name: ml-model-pod-2
 spec:
   restartPolicy: OnFailure
   containers:
@@ -13,7 +13,7 @@ spec:
           mountPath: /data
       env:
         - name: DATASET_CSV
-          value: https://github.com/cs582/recommenderDatasets/blob/main/playlist-sample-ds1.csv
+          value: https://github.com/cs582/recommenderDatasets/blob/main/playlist-sample-ds2.csv
   volumes:
     - name: data
       persistentVolumeClaim:
